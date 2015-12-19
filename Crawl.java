@@ -67,6 +67,9 @@ public class Crawl {
             }
         } else
             System.out.println("\nNo emails found on " + siteToScrape);
+            
+        driver.close();                                                 // stop PhantomJS driver
+        driver.quit();                                                  // quit totally
     }
 
     /*
